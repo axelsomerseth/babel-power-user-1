@@ -8,6 +8,7 @@
     "build": "mkdir -p build && npx babel index.js > build/script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "author": "Axel Somerseth Cordova <axelsomerseth@gmail.com>",
   "license": "MIT",
   "devDependencies": {
