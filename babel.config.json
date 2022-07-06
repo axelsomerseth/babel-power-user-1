@@ -1,8 +1,10 @@
+// Project-wide configuration
 {
   "presets": [
     [
       "@babel/preset-env",
       {
+        // Good target (xD)
         "targets": {
           "safari": "7",
           "ie": "11"
