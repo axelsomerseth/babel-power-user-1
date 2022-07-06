@@ -2,18 +2,18 @@
   "name": "babel-power-user-1",
   "version": "1.0.0",
   "description": "A developer who is able to work with Babel to transpile javascript code to standard ES6 code.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "npx babel ./modules index.js --out-file ./build/script.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "build": "babel src --out-dir lib",
+    "lib": "node ./lib/index.js"
   },
   "type": "module",
   "author": "Axel Somerseth Cordova <axelsomerseth@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.8",
-    "@babel/preset-env": "^7.16.11"
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6"
   }
 }
